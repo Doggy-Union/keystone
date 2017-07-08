@@ -10,7 +10,7 @@ module.exports = function bindIPRestrictions (keystone, app) {
 	app.use(bodyParser.json(bodyParserParams));
 	bodyParserParams.extended = true;
 	app.use(bodyParser.urlencoded(bodyParserParams));
-	app.use(multer({
+	/* app.use(multer({
 		includeEmptyFields: true,
-	}));
+	})); */
 };
